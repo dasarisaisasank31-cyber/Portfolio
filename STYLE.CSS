@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00eaff;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #00eaff;
+}
+
+.typing {
+    font-size: 24px;
+    height: 30px;
+    margin-bottom: 20px;
+    color: #eeeeee;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #00eaff;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #1c1c1c;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: #00eaff;
+    color: black;
+    transform: translateY(-5px);
+}
+
+/* PROJECTS */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #1a1a1a;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00eaff;
+}
+
+/* REVEAL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    margin-top: 40px;
+}
